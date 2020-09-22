@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArticleApp.DAL.Concrete.Mapping
+namespace ArticleApp.DAL.Concrete.EntityFrameworkCore.Mapping
 {
     public class ArticleMap: IEntityTypeConfiguration<Article>
     {
