@@ -13,6 +13,7 @@ using ArticleApp.Entity.Concrete;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ArticleApp.Api.Controllers
 {
@@ -24,22 +25,36 @@ namespace ArticleApp.Api.Controllers
         private readonly IArticleService _articleService;
         private readonly IMapper _mapper;
         private readonly ICommentService _commentService;
+        private readonly IMemoryCache _memoryCache;
 
 
-        public ArticlesController(IArticleService articleService, ICommentService commentService, IMapper mapper)
+        public ArticlesController(IArticleService articleService, ICommentService commentService, IMapper mapper, IMemoryCache memoryCache)
         {
             _articleService = articleService;
             _commentService = commentService;
             _mapper = mapper;
+            _memoryCache = memoryCache;
         }
 
         [HttpGet()]
-        public IActionResult Get()
+        public IActionResult Get() 
         {
+           
             var result = _articleService.GetAllSortedByLastEditDate();
             if (result.Succes)
             {
-                return Ok(_mapper.Map<List<ArticleDto>>(result.Data));
+                if (_memoryCache.TryGetValue("artictleList",out List<ArticleDto> list))
+                {
+                    return Ok(list);
+                }
+                var articleList = _mapper.Map<List<ArticleDto>>(result.Data);
+
+                _memoryCache.Set("artictleList", articleList, new MemoryCacheEntryOptions()
+                {
+                    AbsoluteExpiration = DateTime.Now.AddDays(1),
+                    Priority=CacheItemPriority.Normal
+                });
+                return Ok(articleList);
             }
             return BadRequest(result.Message);
         }

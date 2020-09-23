@@ -30,10 +30,24 @@ namespace ArticleApp.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen(opt =>
+            opt.SwaggerDoc("doc", new Microsoft.OpenApi.Models.OpenApiInfo
+            {
+                Title="Article App",
+                Description="Asp.Net Core Api Article App ",
+                Contact=new Microsoft.OpenApi.Models.OpenApiContact
+                {
+                    Email="abdullahcangul@gmail.com",
+                    Name="Abdullah CANGUL",
+                    Url=new Uri("https://www.linkedin.com/in/abdullah-cangul-b842b111b/")
+                }
+            })
+                ); ;
             services.AddAutoMapper(typeof(Startup));
             services.AddContainerWithDependencies();
             services.AddScoped(typeof(ValidId<>));
             services.AddDbContext<ArticleAppContext>();
+            services.AddMemoryCache();
             services.AddControllers().AddNewtonsoftJson(opt =>
             {
                 opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
@@ -43,14 +57,19 @@ namespace ArticleApp.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            app.UseExceptionHandler("/api/Error");
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseSwagger();
+            app.UseSwaggerUI(opt=>
+            {
+                opt.SwaggerEndpoint("/swagger/doc/swagger.json", "Article App");
+            });
 
             app.UseAuthorization();
 

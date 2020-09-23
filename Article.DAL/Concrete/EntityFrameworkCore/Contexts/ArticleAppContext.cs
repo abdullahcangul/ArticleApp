@@ -2,6 +2,7 @@
 using ArticleApp.DAL.Concrete.EntityFrameworkCore.Mapping;
 using ArticleApp.Entity.Concrete;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,6 +11,7 @@ namespace ArticleApp.DAL.Concrete.Contexts
 {
     public class ArticleAppContext : DbContext
     {
+      
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=.;Database=ArticleDB;Trusted_Connection=True;");
