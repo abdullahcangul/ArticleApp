@@ -2,10 +2,16 @@
 
 Makale uygulaması Asp.net core WebAPI kullanılarak geliştirilmiştir. Temel olarak makale, kategory ve yorum alanlarından oluşmaktadır.
 
-## Installation
+## Kurulum
 
-Uygulamayı database olarak Mssql kullanılmaktadır. Kurulum için gerekli olabilecek tek ayar <b>appsettings.json</b> dosyasından 
-kendinize uygun bir Connection string girmektir. Uygulama başlanğıçta database oluşturup yine bu database fake data eklemektedir.
+Uygulamayı database olarak Mssql kullanılmaktadır.
+- Uygulamayı açınız
+- appsettings.json a uygun connection stringi giriniz. Defaut connection string aşagıdaki gibidir
+- Package Manager Console gidiniz
+- consola <b>"update-database"</b> yazın  ve enter'a basınız
+Uygulama kullanıma hazır
+
+ Ayrıca uygulama başlangıçta database oluşturup yine bu database fake data eklemektedir.
 
 Default connection string
 
