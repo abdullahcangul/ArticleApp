@@ -6,6 +6,7 @@ using ArticleApp.Api.CustomFilters;
 using ArticleApp.Business.DiContainer;
 using ArticleApp.DAL.Concrete.Contexts;
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,7 +34,10 @@ namespace ArticleApp.Api
             services.AddContainerWithDependencies();
             services.AddScoped(typeof(ValidId<>));
             services.AddDbContext<ArticleAppContext>();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(opt =>
+            {
+                opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            }).AddFluentValidation(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

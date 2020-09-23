@@ -111,7 +111,7 @@ namespace ArticleApp.Api.Controllers
 
         [HttpPut("{id}")]
         [ValidModel]
-        public IActionResult Update(int id,[FromForm]ArticleDto articleDto)
+        public IActionResult Update(int id,[FromForm]ArticleUpdateDto articleDto)
         {
             if (id != articleDto.Id)
                 return BadRequest("geçersiz id");
