@@ -2,15 +2,11 @@
 using ArticleApp.Business.Concrete;
 using ArticleApp.Core.Business.Abstract;
 using ArticleApp.Core.DAL;
-using ArticleApp.Core.DAL.EntityFrameworkCore;
-using ArticleApp.Core.Entities.Abstract;
 using ArticleApp.DAL.Abstract;
 using ArticleApp.DAL.Concrete.EntityFrameworkCore.Repositories;
+using ArticleApp.Entity.Concrete;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ArticleApp.Business.DiContainer
 {
@@ -18,12 +14,16 @@ namespace ArticleApp.Business.DiContainer
     {
         public static void AddContainerWithDependencies(this IServiceCollection services)
         {
-           
+            
+            
 
             services.AddScoped<IArticleService, ArticleManager>();
             services.AddScoped<IArticleDal, EfArticleDal>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, EfCategoryDal>();
             services.AddScoped<ICommentService, CommentManager>();
             services.AddScoped<ICommentDal, EfCommentDal>();
+            services.AddScoped<IArticleCategoryDal, EfArticleCategoryDal>();
             services.AddScoped<IMapper, Mapper>();
 
 

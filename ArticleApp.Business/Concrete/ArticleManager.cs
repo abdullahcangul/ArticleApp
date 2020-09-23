@@ -15,20 +15,20 @@ namespace ArticleApp.Business.Concrete
     public class ArticleManager : GenericManager<Article>, IArticleService
     {
         private readonly IArticleDal _articleDal;
-        private readonly IEntityRepository<ArticleCategory> _categoryArticleService;
+        private readonly IArticleCategoryDal _categoryArticleDal;
 
-        public ArticleManager(IArticleDal articleDal, IEntityRepository<ArticleCategory> categoryArticleService) : base(articleDal)
+        public ArticleManager(IArticleDal articleDal, IArticleCategoryDal categoryArticleDal) : base(articleDal)
         {
             _articleDal = articleDal;
-            _categoryArticleService = categoryArticleService;
+            _categoryArticleDal = categoryArticleDal;
         }
 
         public void  AddToCategory(CategoryArticleDto categoryArticleDto)
         {
-            var control =  _categoryArticleService.Get(I => I.CategoryId == categoryArticleDto.CategoryID && I.ArticleId == categoryArticleDto.ArticleID);
+            var control = _categoryArticleDal.Get(I => I.CategoryId == categoryArticleDto.CategoryID && I.ArticleId == categoryArticleDto.ArticleID);
             if (control == null)
             {
-                 _categoryArticleService.Add(new ArticleCategory
+                _categoryArticleDal.Add(new ArticleCategory
                 {
                     ArticleId = categoryArticleDto.ArticleID,
                     CategoryId = categoryArticleDto.CategoryID
@@ -38,10 +38,10 @@ namespace ArticleApp.Business.Concrete
 
         public void RemoveFromCategory(CategoryArticleDto categoryArticleDto)
         {
-            var deletedCategoryArticle = _categoryArticleService.Get(I => I.CategoryId == categoryArticleDto.CategoryID && I.ArticleId == categoryArticleDto.ArticleID);
+            var deletedCategoryArticle = _categoryArticleDal.Get(I => I.CategoryId == categoryArticleDto.CategoryID && I.ArticleId == categoryArticleDto.ArticleID);
             if (deletedCategoryArticle != null)
             {
-                _categoryArticleService.Delete(deletedCategoryArticle);
+                _categoryArticleDal.Delete(deletedCategoryArticle);
             }
         }
 

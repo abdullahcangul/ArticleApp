@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ArticleApp.DTO.DTOs.Category
 {
-    public class CategoryDto
+    public class CategoryListDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

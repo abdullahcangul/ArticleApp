@@ -16,10 +16,10 @@ namespace ArticleApp.Api.Mapping.AutoMapperProfile
         {
             CreateMap<Article, ArticleDto>().ReverseMap();
             CreateMap<Article, ArticleAddDto>().ReverseMap();
-            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Category, CategoryListDto>().ReverseMap();
             CreateMap<Category, CategoryAddDto>().ReverseMap();
             CreateMap<Category, CategoryUpdateDto>().ReverseMap();
-            CreateMap<Comment, CommentAddDto>().ReverseMap();
+            CreateMap<Comment, CommentAddDto>().ReverseMap(); 
             CreateMap<Comment, CommentListDto>().ReverseMap();
 
         }

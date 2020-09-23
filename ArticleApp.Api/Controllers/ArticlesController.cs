@@ -18,7 +18,7 @@ namespace ArticleApp.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ArticleController : ControllerBase
+    public class ArticlesController : ControllerBase
     {
 
         private readonly IArticleService _articleService;
@@ -26,7 +26,7 @@ namespace ArticleApp.Api.Controllers
         private readonly ICommentService _commentService;
 
 
-        public ArticleController(IArticleService articleService, ICommentService commentService, IMapper mapper)
+        public ArticlesController(IArticleService articleService, ICommentService commentService, IMapper mapper)
         {
             _articleService = articleService;
             _commentService = commentService;
@@ -51,7 +51,7 @@ namespace ArticleApp.Api.Controllers
             var result = _articleService.GetCategoriesByArticleId(id);
             if (result.Succes)
             {
-                return Ok(_mapper.Map<List<CategoryDto>>(result.Data));
+                return Ok(_mapper.Map<List<CategoryListDto>>(result.Data));
             }
             return BadRequest(result.Message);
         }
