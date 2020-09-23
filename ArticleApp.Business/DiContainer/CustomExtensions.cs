@@ -1,5 +1,6 @@
 ﻿using ArticleApp.Business.Abstract;
 using ArticleApp.Business.Concrete;
+using ArticleApp.Business.Tools.LogTool;
 using ArticleApp.Business.ValidationRules.FluentValidation;
 using ArticleApp.Core.Business.Abstract;
 using ArticleApp.Core.DAL;
@@ -29,6 +30,7 @@ namespace ArticleApp.Business.DiContainer
             services.AddScoped<ICommentService, CommentManager>();
             services.AddScoped<ICommentDal, EfCommentDal>();
             services.AddScoped<IArticleCategoryDal, EfArticleCategoryDal>();
+            services.AddScoped<ICustomLogger, NLogAdapter>();
             services.AddScoped<IMapper, Mapper>();
 
 
