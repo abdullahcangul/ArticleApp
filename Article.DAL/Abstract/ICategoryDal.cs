@@ -8,5 +8,6 @@ namespace ArticleApp.DAL.Abstract
 {
    public interface ICategoryDal:IEntityRepository<Category>
     {
+        public List<Category> GetAllWithCategoryArticles();
     }
 }

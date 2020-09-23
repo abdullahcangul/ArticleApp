@@ -30,6 +30,11 @@ namespace ArticleApp.Core.DAL.EntityFrameworkCore
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
+        public  TEntity GetById(int id)
+        {
+            using var context = new TContext();
+            return  context.Find<TEntity>(id);
+        }
 
         public TEntity Add(TEntity entity)
         {
@@ -62,5 +67,19 @@ namespace ArticleApp.Core.DAL.EntityFrameworkCore
                 context.SaveChanges();
             }
         }
+
+        public List<TEntity> GetList<TKey>(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, TKey>> keySelector)
+        {
+            using var context = new TContext();
+            return  context.Set<TEntity>().Where(filter).OrderByDescending(keySelector).ToList();
+        }
+
+        public List<TEntity> GetList<TKey>(Expression<Func<TEntity, TKey>> keySelector)
+        {
+            using var context = new TContext();
+            return context.Set<TEntity>().OrderByDescending(keySelector).ToList();
+        }
+
+  
     }
 }

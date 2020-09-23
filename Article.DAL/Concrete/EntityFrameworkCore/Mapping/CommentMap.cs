@@ -16,7 +16,6 @@ namespace ArticleApp.DAL.Concrete.EntityFrameworkCore.Mapping
             builder.Property(I => I.Id).UseIdentityColumn();
 
             builder.Property(I => I.Content).HasMaxLength(600).IsRequired();
-            builder.Property(I => I.Img).HasMaxLength(200);
 
             builder.HasOne(I => I.Article).WithMany(I => I.Comments).HasForeignKey(I => I.ArticleID);
 

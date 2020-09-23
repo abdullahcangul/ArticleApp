@@ -3,6 +3,7 @@ using ArticleApp.Core.Entities.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace ArticleApp.Entity.Concrete
 {
@@ -15,12 +16,12 @@ namespace ArticleApp.Entity.Concrete
         public string Description { get; set; }
         public State State { get; set; }
         public DateTime LastEditDate { get; set; }
-        public DateTime PublishedDate { get; set; }
+        public DateTime PublishedDate { get; set; } = DateTime.Now;
         public bool isActive { get; set; }
 
-
+        
         public List<ArticleCategory> ArticleCategories { get; set; }
-
+        
         public List<Comment> Comments { get; set; }
 
 

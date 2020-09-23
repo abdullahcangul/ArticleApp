@@ -106,7 +106,8 @@ namespace ArticleApp.DAL.Concrete.Contexts
                     ArticleID=1,
                     CommentDate=DateTime.Now,
                     Content="Sound Good",
-                    Img="image.png",
+                    AuthorEmail="abdullahcangul@gmail.com",
+                    AuthorName="Abdullah CANGUL"
                     
                 },
                 new Comment()
@@ -115,8 +116,9 @@ namespace ArticleApp.DAL.Concrete.Contexts
                     ArticleID=1,
                     CommentDate=DateTime.Now,
                     Content=" Good",
-                    Img="image.png",
-                    
+                    AuthorEmail = "abdullahcangul@gmail.com",
+                    AuthorName = "Abdullah CANGUL"
+
                 },
                 new Comment()
                 {
@@ -124,8 +126,9 @@ namespace ArticleApp.DAL.Concrete.Contexts
                     ArticleID=2,
                     CommentDate=DateTime.Now,
                     Content="Well",
-                    Img="image.png",
-                    
+                    AuthorEmail = "abdullahcangul@gmail.com",
+                    AuthorName = "Abdullah CANGUL"
+
                 },
                 new Comment()
                 {
@@ -133,8 +136,9 @@ namespace ArticleApp.DAL.Concrete.Contexts
                     ArticleID=2,
                     CommentDate=DateTime.Now,
                     Content="Not Good",
-                    Img="image.png",
-                    
+                    AuthorEmail = "abdullahcangul@gmail.com",
+                    AuthorName = "Abdullah CANGUL"
+
                 },
                 new Comment()
                 {
@@ -142,8 +146,9 @@ namespace ArticleApp.DAL.Concrete.Contexts
                     ArticleID=4,
                     CommentDate=DateTime.Now,
                     Content="Maybe Sound Good",
-                    Img="image.png",
-                    
+                    AuthorEmail = "abdullahcangul@gmail.com",
+                    AuthorName = "Abdullah CANGUL"
+
                 });
 
             modelBuilder.Entity<ArticleCategory>().HasData(

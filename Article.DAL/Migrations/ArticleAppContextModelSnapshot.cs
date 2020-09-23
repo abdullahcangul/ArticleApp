@@ -66,11 +66,11 @@ namespace ArticleApp.DAL.Migrations
                             Id = 1,
                             Content = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher. He was one of the reporters, featured in the 1973 book The Boys on the Bus,[2] who covered the 1972 presidential election between Richard Nixon and George McGovern. He won the 1977 Pulitzer Prize for National Reporting for his coverage of the 1976 Presidential campaign and election.[3] Mears retired from his career as a political reporter, editor, and news executive in 2001. In 2016 he joined the Osher Lifelong Learning Institute at Duke University, as a volunteer instructor, teaching classes on election campaigns; he had previously taught undergraduate classes in journalism.[4]",
                             Description = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher.",
-                            LastEditDate = new DateTime(2020, 9, 24, 23, 38, 17, 991, DateTimeKind.Local).AddTicks(8391),
-                            PublishedDate = new DateTime(2020, 9, 22, 23, 38, 17, 990, DateTimeKind.Local).AddTicks(8009),
+                            LastEditDate = new DateTime(2020, 9, 25, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(7193),
+                            PublishedDate = new DateTime(2020, 9, 23, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(6813),
                             State = 2,
                             Title = "Walter Mears",
-                            Uid = "9836bacb-2560-41b1-bdf4-eb7b3c293183",
+                            Uid = "a639c662-6b38-4533-bd93-422112aa0f58",
                             isActive = true
                         },
                         new
@@ -78,11 +78,11 @@ namespace ArticleApp.DAL.Migrations
                             Id = 2,
                             Content = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher. He was one of the reporters, featured in the 1973 book The Boys on the Bus,[2] who covered the 1972 presidential election between Richard Nixon and George McGovern. He won the 1977 Pulitzer Prize for National Reporting for his coverage of the 1976 Presidential campaign and election.[3] Mears retired from his career as a political reporter, editor, and news executive in 2001. In 2016 he joined the Osher Lifelong Learning Institute at Duke University, as a volunteer instructor, teaching classes on election campaigns; he had previously taught undergraduate classes in journalism.[4]",
                             Description = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher.",
-                            LastEditDate = new DateTime(2020, 9, 24, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(152),
-                            PublishedDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(140),
+                            LastEditDate = new DateTime(2020, 9, 25, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8910),
+                            PublishedDate = new DateTime(2020, 9, 23, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8903),
                             State = 2,
                             Title = "Dwight D. Eisenhower",
-                            Uid = "465d63d4-0bb8-4225-9524-fc3dbbd7ecd0",
+                            Uid = "a526eeba-088a-4060-bba5-6f17527ac3ac",
                             isActive = true
                         },
                         new
@@ -90,11 +90,11 @@ namespace ArticleApp.DAL.Migrations
                             Id = 3,
                             Content = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher. He was one of the reporters, featured in the 1973 book The Boys on the Bus,[2] who covered the 1972 presidential election between Richard Nixon and George McGovern. He won the 1977 Pulitzer Prize for National Reporting for his coverage of the 1976 Presidential campaign and election.[3] Mears retired from his career as a political reporter, editor, and news executive in 2001. In 2016 he joined the Osher Lifelong Learning Institute at Duke University, as a volunteer instructor, teaching classes on election campaigns; he had previously taught undergraduate classes in journalism.[4]",
                             Description = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher.",
-                            LastEditDate = new DateTime(2020, 9, 24, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(210),
-                            PublishedDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(209),
+                            LastEditDate = new DateTime(2020, 9, 25, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8966),
+                            PublishedDate = new DateTime(2020, 9, 23, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8965),
                             State = 2,
                             Title = "Richard Nixon",
-                            Uid = "15152fa3-7bda-4183-8ad1-9a2457630d29",
+                            Uid = "802588ed-4076-4168-8c80-01eed13fbfcd",
                             isActive = true
                         },
                         new
@@ -102,11 +102,11 @@ namespace ArticleApp.DAL.Migrations
                             Id = 4,
                             Content = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher. He was one of the reporters, featured in the 1973 book The Boys on the Bus,[2] who covered the 1972 presidential election between Richard Nixon and George McGovern. He won the 1977 Pulitzer Prize for National Reporting for his coverage of the 1976 Presidential campaign and election.[3] Mears retired from his career as a political reporter, editor, and news executive in 2001. In 2016 he joined the Osher Lifelong Learning Institute at Duke University, as a volunteer instructor, teaching classes on election campaigns; he had previously taught undergraduate classes in journalism.[4]",
                             Description = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher.",
-                            LastEditDate = new DateTime(2020, 9, 24, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(215),
-                            PublishedDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(215),
+                            LastEditDate = new DateTime(2020, 9, 25, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8973),
+                            PublishedDate = new DateTime(2020, 9, 23, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8972),
                             State = 2,
                             Title = "Richard Nixon",
-                            Uid = "79f52df9-8c07-4919-92f6-cde04b858aff",
+                            Uid = "d6f2faf4-d95c-45d1-860c-3a716d3a17e6",
                             isActive = true
                         },
                         new
@@ -114,11 +114,11 @@ namespace ArticleApp.DAL.Migrations
                             Id = 5,
                             Content = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher. He was one of the reporters, featured in the 1973 book The Boys on the Bus,[2] who covered the 1972 presidential election between Richard Nixon and George McGovern. He won the 1977 Pulitzer Prize for National Reporting for his coverage of the 1976 Presidential campaign and election.[3] Mears retired from his career as a political reporter, editor, and news executive in 2001. In 2016 he joined the Osher Lifelong Learning Institute at Duke University, as a volunteer instructor, teaching classes on election campaigns; he had previously taught undergraduate classes in journalism.[4]",
                             Description = "Walter R. Mears (born January 11, 1935)[1] is an American journalist, author, and teacher.",
-                            LastEditDate = new DateTime(2020, 9, 24, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(219),
-                            PublishedDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(219),
+                            LastEditDate = new DateTime(2020, 9, 25, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8978),
+                            PublishedDate = new DateTime(2020, 9, 23, 11, 56, 7, 439, DateTimeKind.Local).AddTicks(8977),
                             State = 2,
                             Title = "Richard Nixon",
-                            Uid = "ad292251-0bae-499f-8bd9-6a91908f621f",
+                            Uid = "3c15b7ae-1062-4c97-8ca6-a70456de36a3",
                             isActive = true
                         });
                 });
@@ -218,6 +218,12 @@ namespace ArticleApp.DAL.Migrations
                     b.Property<int>("ArticleID")
                         .HasColumnType("int");
 
+                    b.Property<string>("AuthorEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AuthorName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CommentDate")
                         .HasColumnType("datetime2");
 
@@ -226,18 +232,14 @@ namespace ArticleApp.DAL.Migrations
                         .HasColumnType("nvarchar(600)")
                         .HasMaxLength(600);
 
-                    b.Property<string>("Img")
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
-
-                    b.Property<int?>("ReplyID")
+                    b.Property<int?>("ParentCommentId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ArticleID");
 
-                    b.HasIndex("ReplyID");
+                    b.HasIndex("ParentCommentId");
 
                     b.ToTable("Comments");
 
@@ -246,41 +248,46 @@ namespace ArticleApp.DAL.Migrations
                         {
                             Id = 1,
                             ArticleID = 1,
-                            CommentDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(1357),
-                            Content = "Sound Good",
-                            Img = "image.png"
+                            AuthorEmail = "abdullahcangul@gmail.com",
+                            AuthorName = "Abdullah CANGUL",
+                            CommentDate = new DateTime(2020, 9, 23, 11, 56, 7, 440, DateTimeKind.Local).AddTicks(520),
+                            Content = "Sound Good"
                         },
                         new
                         {
                             Id = 2,
                             ArticleID = 1,
-                            CommentDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(2185),
-                            Content = " Good",
-                            Img = "image.png"
+                            AuthorEmail = "abdullahcangul@gmail.com",
+                            AuthorName = "Abdullah CANGUL",
+                            CommentDate = new DateTime(2020, 9, 23, 11, 56, 7, 440, DateTimeKind.Local).AddTicks(1573),
+                            Content = " Good"
                         },
                         new
                         {
                             Id = 3,
                             ArticleID = 2,
-                            CommentDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(2205),
-                            Content = "Well",
-                            Img = "image.png"
+                            AuthorEmail = "abdullahcangul@gmail.com",
+                            AuthorName = "Abdullah CANGUL",
+                            CommentDate = new DateTime(2020, 9, 23, 11, 56, 7, 440, DateTimeKind.Local).AddTicks(1600),
+                            Content = "Well"
                         },
                         new
                         {
                             Id = 4,
                             ArticleID = 2,
-                            CommentDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(2206),
-                            Content = "Not Good",
-                            Img = "image.png"
+                            AuthorEmail = "abdullahcangul@gmail.com",
+                            AuthorName = "Abdullah CANGUL",
+                            CommentDate = new DateTime(2020, 9, 23, 11, 56, 7, 440, DateTimeKind.Local).AddTicks(1602),
+                            Content = "Not Good"
                         },
                         new
                         {
                             Id = 5,
                             ArticleID = 4,
-                            CommentDate = new DateTime(2020, 9, 22, 23, 38, 17, 992, DateTimeKind.Local).AddTicks(2208),
-                            Content = "Maybe Sound Good",
-                            Img = "image.png"
+                            AuthorEmail = "abdullahcangul@gmail.com",
+                            AuthorName = "Abdullah CANGUL",
+                            CommentDate = new DateTime(2020, 9, 23, 11, 56, 7, 440, DateTimeKind.Local).AddTicks(1603),
+                            Content = "Maybe Sound Good"
                         });
                 });
 
@@ -307,9 +314,9 @@ namespace ArticleApp.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ArticleApp.Entity.Concrete.Comment", "Reply")
-                        .WithMany()
-                        .HasForeignKey("ReplyID");
+                    b.HasOne("ArticleApp.Entity.Concrete.Comment", "ParentComment")
+                        .WithMany("SubComments")
+                        .HasForeignKey("ParentCommentId");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,5 +8,6 @@ namespace ArticleApp.DAL.Abstract
 {
     public interface ICommentDal: IEntityRepository<Comment>
     {
+        List<Comment> GetAllWithSubComments(int articleId, int? parentId);
     }
 }

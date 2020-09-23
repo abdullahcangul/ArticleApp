@@ -8,6 +8,8 @@ namespace ArticleApp.DAL.Abstract
 {
     public interface IArticleDal: IEntityRepository<Article>
     {
-
+        public List<Category> GetCategoriesByArticleId(int ArticleId);
+        public List<Comment> GetCommentsByArticleId(int ArticleId);
+        public List<Article> GetAllByCategory(int categoryId);
     }
 }

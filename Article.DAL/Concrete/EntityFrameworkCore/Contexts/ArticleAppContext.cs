@@ -1,4 +1,5 @@
-﻿using ArticleApp.DAL.Concrete.Mapping;
+﻿
+using ArticleApp.DAL.Concrete.EntityFrameworkCore.Mapping;
 using ArticleApp.Entity.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
